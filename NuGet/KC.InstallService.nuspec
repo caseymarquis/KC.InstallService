@@ -7,7 +7,7 @@
     <licenseUrl>https://github.com/CaseyMarquis/KC.InstallService/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/CaseyMarquis/KC.InstallService</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description></description>
+    <description>Helps install .NET Framework services.</description>
     <copyright></copyright>
     <tags></tags>
   </metadata>
