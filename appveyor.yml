@@ -1,0 +1,28 @@
+version: '1.0.{build}'
+image: Visual Studio 2017
+branches:
+  only:
+  - master
+
+configuration: Release
+
+init:
+  # Good practise, because Windows line endings are different from Unix/Linux ones
+  - cmd: git config --global core.autocrlf true
+
+build:
+  project: KC.InstallService.sln
+
+after_build:
+  - ps: .\nuget\pack.ps1
+
+  # For once the build has completed
+artifacts:
+ - path: './KC.InstallService/bin/Release/*.nupkg'
+   name: NuGet
+clone_depth: 1
+deploy:
+ - provider: NuGet
+   api_key:
+     secure: RqN8h1cc9RDQzU+gkhf0YclC7prs0yhULZ4grxJUuPE3mfR7ho76wXt2eGXjcAbk
+   skip_symbols: true

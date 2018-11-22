@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>KC.InstallService</id>
+    <version>$version$</version>
+    <authors>Casey Marquis</authors>
+    <licenseUrl>https://github.com/CaseyMarquis/KC.InstallService/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/CaseyMarquis/KC.InstallService</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description></description>
+    <copyright></copyright>
+    <tags></tags>
+  </metadata>
+</package>

@@ -1,0 +1,5 @@
+This sure is a lot easier with .net standard.
+
+Used the below to help get setup:
+https://github.com/Wheelies/MarkdownLog
+https://www.codeproject.com/Tips/806257/Automating-NuGet-Package-Creation-using-AppVeyor
