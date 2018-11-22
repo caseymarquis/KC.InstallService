@@ -18,7 +18,7 @@ after_build:
 
   # For once the build has completed
 artifacts:
- - path: './KC.InstallService/bin/Release/*.nupkg'
+ - path: './*.nupkg'
    name: NuGet
 clone_depth: 1
 deploy:
