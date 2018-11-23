@@ -14,7 +14,7 @@ build:
   project: KC.InstallService.sln
 
 after_build:
-  - ps: .\nuget\pack.ps1
+  - cmd: .\nuget\nuget.exe pack .\nuget\KC.InstallService.nuspec
 
   # For once the build has completed
 artifacts:

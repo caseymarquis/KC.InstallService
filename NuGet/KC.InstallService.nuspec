@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>KC.InstallService</id>
-    <version>$version$</version>
+    <version>1.0.1</version>
     <authors>Casey Marquis</authors>
     <licenseUrl>https://github.com/CaseyMarquis/KC.InstallService/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/CaseyMarquis/KC.InstallService</projectUrl>
@@ -11,4 +11,8 @@
     <copyright></copyright>
     <tags></tags>
   </metadata>
+  <files>
+     <file src="..\KC.InstallService\bin\Release\KC.InstallService.dll" target="lib\net46\KC.InstallService.dll"/>
+     <file src="..\KC.InstallService\bin\Release\KC.InstallService.pdb" target="lib\net46\KC.InstallService.pdb"/>
+  </files>
 </package>
