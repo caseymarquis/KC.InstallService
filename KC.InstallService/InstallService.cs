@@ -81,7 +81,7 @@ namespace KC.InstallServiceNS {
             Console.WriteLine("Starting Uninstall");
             ServiceStopper.StopTheService(serviceName);
             Console.WriteLine($"Uninstalling Service: {serviceName}");
-            RunCmdProcess.RunProcess("sc", $"delete {serviceName}", Path.GetFullPath(".\\"));
+            RunCmdProcess.RunProcess("sc", $"delete {serviceName.Quoted()}", Path.GetFullPath(".\\"));
         }
     }
 }
