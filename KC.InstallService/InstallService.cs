@@ -36,10 +36,10 @@ namespace KC.InstallServiceNS {
                         return;
                     }
                     var execFilePath = serviceAssembly.Location;
-                    if (!RunCmdProcess.RunProcess(bestInstallUtil.FullName, execFilePath, Path.GetFullPath(".\\"))) {
+                    if (!RunCmdProcess.RunProcess(bestInstallUtil.FullName, execFilePath.Quoted(), Path.GetFullPath(".\\"))) {
                         Console.WriteLine("Error installing service.");
                         Console.WriteLine("To manually install the service, run:");
-                        Console.WriteLine($"\"{bestInstallUtil.FullName}\" \"{execFilePath}\"");
+                        Console.WriteLine($"{bestInstallUtil.FullName.Quoted()} {execFilePath.Quoted()}");
                         return;
                     }
                     else {
