@@ -40,7 +40,7 @@ namespace KC.InstallServiceNS.Internal {
                 return false;
             }
             catch (Exception ex) {
-                Console.WriteLine($"Error Running Process{fileName} {args} in {workingDir}: " + ex.Message);
+                Console.WriteLine($"Error Running Process {fileName.Quoted()} {args} in {workingDir.Quoted()}: " + ex.Message);
                 return false;
             }
         }

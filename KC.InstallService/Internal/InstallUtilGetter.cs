@@ -16,7 +16,7 @@ namespace KC.InstallServiceNS.Internal {
             try {
                 var dotNetDir = new DirectoryInfo(@"C:\Windows\Microsoft.NET\Framework");
                 if (!dotNetDir.Exists) {
-                    Console.WriteLine($"Could not find system directory for service install {dotNetDir}");
+                    Console.WriteLine($"Could not find system directory for service install {dotNetDir.FullName.Quoted()}");
                     return null;
                 }
                 FileInfo bestUtil = null;
@@ -85,14 +85,14 @@ namespace KC.InstallServiceNS.Internal {
                         }
                     }
                     catch (Exception ex) {
-                        Console.WriteLine($"Unable to check for InstallUtil in {subDir.Name}: {ex.ToString()}");
+                        Console.WriteLine($"Unable to check for InstallUtil in {subDir.Name.Quoted()}: {ex.ToString()}");
                     }
                 }
                 if (bestUtil == null) {
                     Console.WriteLine("Unable to find system file InstallUtil.exe");
                 }
                 else {
-                    Console.WriteLine("InstallUtil.exe version: " + bestUtil.Directory.Name);
+                    Console.WriteLine("InstallUtil.exe version: " + bestUtil.Directory.Name.Quoted());
                 }
                 return bestUtil;
             }

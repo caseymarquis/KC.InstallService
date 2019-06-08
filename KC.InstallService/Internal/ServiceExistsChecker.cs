@@ -14,7 +14,7 @@ namespace KC.InstallServiceNS.Internal {
                 return service != null;
             }
             catch (Exception ex) {
-                Console.WriteLine($"Failed to Find the {serviceName} Service: " + ex.Message);
+                Console.WriteLine($"Failed to Find the {serviceName.Quoted()} Service: " + ex.Message);
                 return false;
             }
         }
