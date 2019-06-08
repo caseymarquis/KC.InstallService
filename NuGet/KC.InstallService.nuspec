@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>KC.InstallService</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <authors>Casey Marquis</authors>
     <licenseUrl>https://github.com/CaseyMarquis/KC.InstallService/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/CaseyMarquis/KC.InstallService</projectUrl>
