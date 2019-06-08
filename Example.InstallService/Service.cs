@@ -9,6 +9,7 @@ using System.ComponentModel;
 
 namespace Example.InstallServiceNS {
 
+    [System.ComponentModel.DesignerCategory("")]
     public class Service : ServiceBase {
         public static string Name = "Example.InstallService";
 
@@ -107,6 +108,7 @@ namespace Example.InstallServiceNS {
 
     }
 
+    [System.ComponentModel.DesignerCategory("")]
     [RunInstaller(true)]
     public class TheServiceInstaller : Installer {
         public TheServiceInstaller() {
